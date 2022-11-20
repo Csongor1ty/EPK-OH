@@ -32,16 +32,17 @@ function getVariableName($var) {
 
 /* ITT LEHET MEGVÁLTOZTATNI AZ ÉLES PÉLDÁT! */
 
-// global scope nélkül undefined az átvett input változó, de működőképes
+// global scope nélkül undefined az átvett input változó (de működőképes)
 
-global $exampleData3;
-$examinedStudent = $exampleData3;
+global $exampleData6;
+$examinedStudent = $exampleData6;
 
 /* -----------------------------------------*/
 
     // input ellenőrzése - jelentkezés alapján szak példány kiválasztása
 if ($calc->requirementsMet($examinedStudent, $mustAbsolve) == 0){
     $chosenMajor = $calc->whichMajor($examinedStudent);
+
     if($chosenMajor[0] == $pti->get_institutionName($pti) &&
         $chosenMajor[1] == $pti->get_departmentName($pti) &&
         $chosenMajor[2] == $pti->get_majorName($pti)){
@@ -50,6 +51,7 @@ if ($calc->requirementsMet($examinedStudent, $mustAbsolve) == 0){
             $pti->get_primaryAdvanced($pti)), $calc->findBestOptionalRequired($examinedStudent, $pti->get_optionalRequired($pti)),
             $calc->calculateExtraPoints($examinedStudent));
     }
+
     if($chosenMajor[0] == $angl->get_institutionName($angl) &&
         $chosenMajor[1] == $angl->get_departmentName($angl) &&
         $chosenMajor[2] == $angl->get_majorName($angl)){
