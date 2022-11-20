@@ -187,6 +187,8 @@ $exampleData3 = [
     ],
 ];
 
+/* SAJÁT TESZTESETEK */
+
 $exampleData4 = [
     'valasztott-szak' => [
         'egyetem' => 'PPKE',
@@ -196,7 +198,7 @@ $exampleData4 = [
     'erettsegi-eredmenyek' => [
         [
             'nev' => 'magyar nyelv és irodalom',
-            'tipus' => 'emelt',
+            'tipus' => 'közép',
             'eredmeny' => '95%',
         ],
         [
@@ -211,7 +213,7 @@ $exampleData4 = [
         ],
         [
             'nev' => 'angol nyelv',
-            'tipus' => 'közép',
+            'tipus' => 'emelt',
             'eredmeny' => '94%',
         ],
         [
@@ -226,6 +228,90 @@ $exampleData4 = [
             'tipus' => 'B2',
             'nyelv' => 'angol',
         ],
+        [
+            'kategoria' => 'Nyelvvizsga',
+            'tipus' => 'B2',
+            'nyelv' => 'német',
+        ],
+        [
+            'kategoria' => 'Nyelvvizsga',
+            'tipus' => 'C1',
+            'nyelv' => 'német',
+        ],
+    ],
+];
+
+$exampleData5 = [
+    'valasztott-szak' => [
+        'egyetem' => 'ELTE',
+        'kar' => 'IK',
+        'szak' => 'Programtervező informatikus',
+    ],
+    'erettsegi-eredmenyek' => [
+        [
+            'nev' => 'magyar nyelv és irodalom',
+            'tipus' => 'közép',
+            'eredmeny' => '70%',
+        ],
+        [
+            'nev' => 'történelem',
+            'tipus' => 'közép',
+            'eredmeny' => '80%',
+        ],
+        [
+            'nev' => 'matematika',
+            'tipus' => 'közép',
+            'eredmeny' => '90%',
+        ],
+        [
+            'nev' => 'angol nyelv',
+            'tipus' => 'emelt',
+            'eredmeny' => '94%',
+        ],
+        [
+            'nev' => 'informatika',
+            'tipus' => 'emelt',
+            'eredmeny' => '95%',
+        ],
+    ],
+    'tobbletpontok' => [
+        [
+            'kategoria' => 'Nyelvvizsga',
+            'tipus' => 'C1',
+            'nyelv' => 'angol',
+        ],
+    ],
+];
+
+$exampleData6 = [
+    'valasztott-szak' => [
+        'egyetem' => 'ELTE',
+        'kar' => 'IK',
+        'szak' => 'Programtervező informatikus',
+    ],
+    'erettsegi-eredmenyek' => [
+        [
+            'nev' => 'magyar nyelv és irodalom',
+            'tipus' => 'közép',
+            'eredmeny' => '70%',
+        ],
+        [
+            'nev' => 'történelem',
+            'tipus' => 'közép',
+            'eredmeny' => '80%',
+        ],
+        [
+            'nev' => 'matematika',
+            'tipus' => 'közép',
+            'eredmeny' => '90%',
+        ],
+        [
+            'nev' => 'angol nyelv',
+            'tipus' => 'emelt',
+            'eredmeny' => '94%',
+        ],
+    ],
+    'tobbletpontok' => [
         [
             'kategoria' => 'Nyelvvizsga',
             'tipus' => 'C1',
